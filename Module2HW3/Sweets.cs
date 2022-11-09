@@ -1,10 +1,9 @@
-﻿namespace Sweets
+﻿namespace Module2HW3
 {
-    public abstract class Sweets : EnumProperties.EnumProperties
+    public class Sweets : EnumProperties
     {
-        protected EShape Shape { get; set; }
-        protected EConsistency Consistency { get; set; }
-        protected EColor Color { get; set; }
-        protected float Weight { get; set; }
+        public EShape Shape { get; set; }
+        public EConsistency Consistency { get; set; }
+        public EColor Color { get; set; }
     }
 }

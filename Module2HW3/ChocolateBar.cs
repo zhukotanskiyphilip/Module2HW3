@@ -1,8 +1,19 @@
-﻿namespace ChocolateBar
+﻿namespace Module2HW3
 {
-    public class ChocolateBar : Packaged.Packaged
+    public class ChocolateBar : Packaged
     {
-        protected ChocolateBar(EDimensions dimensions)
+        public enum EDimensions
+        {
+            Small,
+            Medium,
+            Large
+        }
+
+        public EDimensions Dimensions { get; set; }
+        protected int Width { get; set; }
+        protected int Length { get; set; }
+
+        protected void SetDimensions(EDimensions dimensions)
         {
             switch (dimensions)
             {
@@ -20,16 +31,5 @@
                     break;
             }
         }
-
-        protected enum EDimensions
-        {
-            Small,
-            Medium,
-            Large
-        }
-
-        protected EDimensions Dimensions { get; set; }
-        protected int Width { get; set; }
-        protected int Length { get; set; }
     }
 }

@@ -1,8 +1,8 @@
-﻿namespace EnumProperties
+﻿namespace Module2HW3
 {
-    public class EnumProperties : Product.Product
+    public abstract class EnumProperties : Product
     {
-        protected enum EShape
+        public enum EShape
         {
             Rectangle,
             Sphere,
@@ -10,13 +10,13 @@
             Figures
         }
 
-        protected enum EConsistency
+        public enum EConsistency
         {
             Soft,
             Hard
         }
 
-        protected enum EColor
+        public enum EColor
         {
             Red,
             Yellow,

@@ -1,12 +1,12 @@
 ﻿namespace Module2HW3.Candy
 {
-    internal class AtomicFireball : Packaged.Packaged
+    public class AtomicFireball : Packaged
     {
         public AtomicFireball()
         {
             Name = "Atomic Fireball";
-            Price = 10.99f;
-            Weight = 0.05f;
+            Price = 0.59f;
+            Weight = 50;
             Shape = EShape.Sphere;
             Consistency = EConsistency.Soft;
             Color = EColor.Red;

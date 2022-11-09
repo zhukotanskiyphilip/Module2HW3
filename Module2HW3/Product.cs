@@ -1,8 +1,16 @@
-﻿namespace Product
+﻿namespace Module2HW3
 {
     public class Product
     {
-        protected string? Name { get; set; }
-        protected float Price { get; set; }
+        public Product()
+        {
+            Name = string.Empty;
+            Price = 0f;
+            Weight = 0;
+        }
+
+        public string? Name { get; set; }
+        public float Price { get; set; }
+        public int Weight { get; set; }
     }
 }

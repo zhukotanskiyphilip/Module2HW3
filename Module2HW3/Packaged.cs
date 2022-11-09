@@ -1,14 +1,14 @@
-﻿namespace Packaged
+﻿namespace Module2HW3
 {
-    public class Packaged : Sweets.Sweets
+    public class Packaged : Sweets
     {
-        protected enum PackageType
+        public enum PackageType
         {
             Boxed,
             Plastic_Wrapper,
             Paper_Wrapper
         }
 
-        protected PackageType PType { get; set; }
+        public PackageType PType { get; set; }
     }
 }
